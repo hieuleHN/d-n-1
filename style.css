@@ -1,0 +1,701 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8vw;
+}
+/* ctrl + h để tìm kiếm */
+.boxcenter{
+    width: 80%;
+    margin: 0 auto;
+}
+.row{
+    float: left;
+    width: 100%;
+}
+.mb{
+    margin-bottom: 30px;
+}
+.mr{
+    margin-right: 2%;
+}
+.footer{
+    background-color: rgb(248, 136, 248);
+    border: 1px solid #090;
+    font-size: 0.8vw;
+    color: blue;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 50px;
+}
+.grip{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 9px;
+}
+.menu{
+    position: relative;
+    bottom: 15px;
+    background-color: rgb(49, 3, 92);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.boxtitle{
+    font-size: 15px;
+    background-color: rgb(247, 249, 120);
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #ccc;
+}
+.boxcontent{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid #ccc;
+    min-height: 200px;
+    padding: 20px;
+}
+.banner{
+    min-height: 300px;
+    width: 100%;
+    text-align: center;
+}
+.banner img{
+    height: 300px;
+}
+.khung_sp{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0;
+}
+.boxsp{
+    width: 280px;
+    min-height: 280px;
+    border: 1px #eee solid;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+.boxsp p{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+.boxsp a{
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+.boxsp .img{
+    min-height: 280px;
+    text-align: center;
+    transition: 1s ease-in-out;
+}
+.boxsp .img:hover{
+    transform: scale(1.2);
+}
+h1{
+    color: red;
+}
+.img img{
+    height: 270px;
+}
+nav ul{
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 16px;
+    margin-right: 10px;
+    height: 80px;
+}
+nav ul li a{
+    color: white;
+    position: relative;
+    top: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    color: black;
+    font-size: 0.8vw;
+}
+nav ul li:hover{
+    background-color: thistle;
+}
+.formtaikhoan{
+    line-height: 150%;
+}
+.formtaikhoan input[type="text"],
+.formtaikhoan input[type="number"],
+.formtaikhoan input[type="password"],
+.formtaikhoan input[type="email"],
+.formcontent input[type="text"]{
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.formtaikhoan input[type="checkbox"]{
+    border-radius: 5px;
+}
+button,
+.formtaikhoan input[type="submit"],
+.formcontent input[type="submit"],
+.formtaikhoan input[type="reset"],
+.formcontent input[type="reset"]{
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+button a{
+    text-decoration: none;
+    color: red;
+}
+.formtaikhoan input[type="submit"]:hover,
+.formcontent input[type="submit"]:hover,
+.formcontent input[type="reset"]:hover
+.formcontent input[type="button"]:hover{
+    background-color: #ccc;
+}
+.menu_doc ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu_doc ul li{
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+.menu_doc ul li a{
+    color: #363535;
+    font-size: 16px;
+    text-decoration: none;
+}
+.menu_doc ul li:hover{
+    background-color: #ccc;
+}
+.box_search input[type="text"]{
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.box_search input[type="submit"]{
+    border: none;
+    color: white;
+    background: none;
+}
+.top10 img{
+    width: 20%;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.top10 a{
+    font-size: 14px;
+    color: #252525;
+    text-decoration: none;
+}
+.top10 a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+.dslh table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.dslh table th{
+    padding: 20px;
+    background-color: #ccc;
+}
+/* .dslh table th:nth-child(1){
+    width: 30%;
+    background-color: #ccc;
+}
+.dslh table th:nth-child(2){
+    width: 40%;
+    background-color: #ccc;
+}
+.dslh table th:nth-child(3){
+    width: 20%;
+} */
+.dslh table td{
+    padding: 10px 20px;
+    background-color: 1px solid #ccc;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev{
+    display: flex;
+    justify-content: left;
+
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.khung_sp{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: white;
+    margin-left: 60px;
+}
+.khung3o{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.khung2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.spct{
+    text-align: center;
+}
+#buy-amount{
+    display: flex;
+}
+#buy-amount button{
+    width: 35px;
+    height: 35px;
+    outline: none;
+    background: none;
+    border: 1px solid thistle;
+    cursor: pointer;
+}
+#buy-amount button:hover{
+    background-color: #ececec;
+}
+#buy-amount button svg{
+    color: #909090;
+}
+#buy-amount button svg:hover{
+    color: #4f4f4f
+}
+#buy-amount #amount{
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ececec;
+}
+.size ul li{
+    padding: 3px;
+    list-style: none;
+    display: inline-block;
+}
+.size ul li input{
+    background: none;
+    width: 70px;
+    height: 70px;
+    border: 1px solid thistle;
+}
+.size ul li p{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    position: relative;
+    top: 57px;
+}
+.size ul li input:hover{
+    background-color: #ccc;
+}
+.title_sp_chitiet{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.header img{
+    width: 100%;
+    height: 200px;
+}
+.header{
+    position: relative;
+    transition: transform .5s;
+}
+.header_left{
+    position: absolute;
+    top: 0;
+}
+.header_left img{
+    width: 250px;
+}
+.header_con{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    margin-right: 30px;
+}
+.header_con img{
+    width: 50px;
+    height: 50px;
+}
+
+/* hiệu ứng giỏ hàng*/
+.container{
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+svg{
+    width: 30px;
+}
+.gio_hang{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    gap: 20px;
+}
+.icon-cart{
+    position: relative;
+}
+.icon-cart span{
+    position: absolute;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+.title{
+    font-size: xx-large;
+}
+
+/* cart */
+.cartTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body.showCart .cartTab{
+    right: 0;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab button{
+    background-color: #E8BC0E;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .close{
+    background-color: #eee;
+}
+.listCart .item img{
+    width: 100%;
+}
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+
+/* DANH MỤC */
+.dmTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body.showdm .dmTab{
+    right: 0;
+}
+body.showdm .container{
+    transform: translateX(-250px);
+}
+.dmTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.dmTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.dmtab{
+    background-color: #E8BC0E;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+.dmTab .close_dm{
+    background-color: #eee;
+}
+.listdm .item img{
+    width: 100%;
+}
+.listdm .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listdm .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+.listdm .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+.listdm .item:nth-child(even){
+    background-color: #eee1;
+}
+.listdm{
+    overflow: auto;
+}
+.listdm::-webkit-scrollbar{
+    width: 0;
+}
+
+/* TÀI KHOẢN */
+.TKTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body.showTK .TKTab{
+    right: 0;
+}
+body.showTK .container{
+    transform: translateX(-250px);
+}
+.TKTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.TKTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.TKTab button{
+    background-color: #E8BC0E;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+.TKTab .close_TK{
+    background-color: #eee;
+}
+.listTK .item img{
+    width: 100%;
+}
+.listTK .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listTK .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+.listTK .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+.listTK .item:nth-child(even){
+    background-color: #eee1;
+}
+.listTK{
+    overflow: auto;
+}
+.listTK::-webkit-scrollbar{
+    width: 0;
+}
+
+
+/* CSS CHO BIẾN THỂ */
+.minus-btn, .plus-btn {
+    background-color: #f2f2f2;
+    color: #000;
+    font-size: 20px;
+    padding: 7px;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+.minus-btn:hover, .plus-btn:hover {
+    background-color: #d9d9d9;
+}
